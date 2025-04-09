@@ -1,0 +1,295 @@
+body{
+    font-family: "Nunito Sans";
+    overflow-y: auto !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#site-top{
+    background: var(--rgb-092255, #005CFF);
+}
+
+#top-text{
+    font-weight: bold;
+    font-family: "Nunito Sans" !important;
+}
+
+#italico{
+    font-weight: lighter;
+}
+
+#grifado{
+    border-radius: 4px;
+    background: #6220CC;
+    color: white;
+}
+
+#navbar-site{
+    margin-left: 2%;
+}
+
+#avanti-logo{
+    width: clamp(120px, 8vw, 152.575px);
+    height: clamp(20px, 1.42vw, 27.081px);
+}
+
+#button-pesquisa{
+    background: white;
+    border: 1px solid rgb(222, 226, 230);
+    border-left: none;
+}
+
+.search-bar{
+    width: 100% !important;
+    border-radius: 10px !important;
+}   
+
+.dropdown-menu.show {
+    display: flex;
+  }
+
+  .dropdown-menu li:first-child a {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #516beb;
+  }
+
+  .dropdown-menu li .dropdown-item {
+    color: gray;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+
+  .dropdown-menu {
+    border: none;
+    border-radius: 0;
+    margin-top: 5px;
+    padding-top: 11px;
+    display: none;
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+
+#navbarDropdown{
+    transition: 0.3s ease-in-out;
+  }
+
+  #navbarDropdown:hover{
+    color: #005CFF;
+  }
+
+  #navbar-categorias{
+    margin-left: 14%;
+    font-size: small;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+#dropdown-icon{
+    padding-bottom: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.departamento-div{
+    background: var(--Grey-Scale-light-grey, #F5F5F5);
+}
+
+.departamento{
+    color: black;
+}
+
+#opcoes-cliente{
+    padding-left: 12%;
+}
+
+#navbarDropdown:hover #dropdown-icon {
+    content: url('assets/dropdown-icon-active.svg'); 
+  }
+
+#container-promo{
+    background-color: #E7E7EA !important;
+}
+
+.banner-text {
+    position: absolute; 
+    top: 45%; 
+    left: 57%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    text-align: center; 
+    font-family: "Nunito" !important;
+  }
+
+  #supersale{
+    font-size:5.2rem;
+    margin-bottom: 1.5%;
+    font-weight: 300;
+  }
+
+  #supersale strong{
+    font-weight: 700;
+  }
+
+  #itens-texto{
+    color: #005CFF;
+    letter-spacing: 7.5px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2%;
+  }
+
+  #desconto-texto{
+    color: #005CFF;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+.div-navbar{
+    background: var(--Grey-Scale-white, #FFF);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+  .container-carrossel{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .card-produto{
+    border-radius: 10px;
+    border: 1px solid #DDD;   
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Center the cards */
+  }
+
+  .card-wrapper{
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .card-title{
+    font-size: 0.7rem;
+  }
+  
+
+  .div-desconto mark{
+    border-radius: 4px;
+    background: #5EC0BE;
+    color: white;
+    text-decoration: underline;
+    font-size: small;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .texto-parcela{
+    font-size: 0.7rem;
+  }
+
+  .preco-anterior{
+    margin-bottom: 0;
+    color: #303030;
+    font-weight: 400;
+    font-size: smaller;
+  }
+
+.preco-atual{
+    margin-top: -4px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+
+.carousel-control-prev{
+    width: auto;
+}
+
+.carousel-control-next{
+    width: auto; 
+}
+
+.top-text-carousel-left{
+    font-weight: 700;
+    margin-left: 15.5%;
+    font-size: large;
+}
+
+.top-text-carousel-right{
+    margin-right: 21.5%;
+    font-size: small;
+}
+
+.carousel-indicators{
+    bottom: -10%;
+}
+
+
+@media (min-width: 768px){
+    .logo{
+        justify-content: end;
+    }
+
+    .col-md-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+      }
+      
+    
+}
+
+@media (max-width: 576px){
+    .body{
+        overflow-x: hidden;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+
+    .card-wrapper {
+        justify-content: space-between; 
+      }
+
+      .col-6 {
+        flex: 0 0 50%; 
+        max-width: 50%;
+        padding: 0;
+      }
+
+      .card-produto {
+        margin: 0 auto; /* Center the cards */
+      }
+}
+
+@media (min-width: 992px) { 
+    .card-wrapper{
+        gap: 0;
+    }
+    
+    .col-lg-2 {
+      flex: 0 0 20%; 
+      max-width: 20%;
+    }
+
+    #carrossel-prev{
+        left: 14.5%;
+      }
+  
+      #carrossel-next{
+        left: 76%;
+}
+    }
+
